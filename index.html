@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+            <div class="odin">
+                <div class="odin_display">
+                    <img src="odin-lined.png" alt="image">
+                    ODIN
+                </div>
+            </div>
+            <footer>
+                Photo by &nbsp; <u>Haily West</u> &nbsp; on &nbsp; <u>Unsplash</u>
+            </footer>
+        </div>
+        <div class="main">
+            <div class="thisisnot">
+                <p>
+                This is not a real online service! You know you need something like
+                this in your life to help realize your deepest dreams.
+                Sign up&nbsp;<i>now</i>&nbsp;to get started. 
+                </p>
+                <p>You&nbsp;<i>know</i>&nbsp;you want to.</p>
+
+            </div>
+            <div class="letsdothis">
+                Let's Do This! 
+                <div>&nbsp;</div>
+                <div class="form">
+                    <form action="#" method="get">
+                        <div class="twocolumns">
+                        <div class="left">
+                            <div class="labell">
+                                <label for="first_name">First Name</label>
+                            </div>
+                                <input type="text" id="first_name" name="first_name">
+                            <div class="labell">
+                                <label for="email">Email</label>
+                            </div>
+                                <input type="email" id="email" name="email">
+                            <div class="labell">
+                                <label for="password">Password</label>
+                            </div>
+                                <input type="password" id="password" name="password">
+                        </div>
+                        <div class="right">
+                            <div class="labell">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                                <input type="text" id="last_name" name="last_name">
+                            <div class="labell">
+                                <label for="number">Phone Number</label>
+                            </div>
+                                <input type="phone_number" id="phone_number" pattern="" name="phone_number">
+                            <div class="labell">
+                                <label for="confirm_password">Confirm Password</label>
+                            </div>
+                                <input type="password" id="confirm_password" name="confirm_password">
+                        </div>
+                        </div>
+                      </form>
+                </div>
+            </div>
+            <div class="createaccount" id="createaccount">
+                <button>Create Account</button>
+            </div>
+            <div class="login">
+                Already have an account? <a class="login_link" href="https://www.google.com">Log in</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkPasswordMatch() {
+          var password = document.getElementById("password").value;
+          var confirmPassword = document.getElementById("confirm_password").value;
+    
+          if (password !== confirmPassword) {
+            alert("Passwords do not match");
+          } else {
+            alert("Success!! Account created");
+          }
+        }
+        document.getElementById("createaccount").addEventListener("click", checkPasswordMatch);
+      </script>
+</body>
+</html>
